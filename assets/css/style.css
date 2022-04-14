@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e2e6ea;
+}
+
+/* NAV START */
+nav {
+    display: flex;
+    height: 7vh;
+    background-color: #f4f4f4;
+    font-size: 1.1em;
+}
+
+nav div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+nav .left {
+    justify-content: flex-start;
+    margin-left: 5%;
+    align-items: center;
+}
+
+nav .left a{
+    text-decoration: none;
+    color: black;
+}
+
+/* nav .left ul a, nav .left img{
+    
+} */
+
+nav .left ul{
+    margin-left: 30px;
+}
+
+nav .left li{
+    display: inline;
+    padding: 10px;
+}
+
+nav .left img{
+    width: 60px;
+}
+
+nav .right{
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+nav .right a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+/* NAV END */
+
+
+
+/* CONTACT FROM START */
+.form-contact {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contact form input, select, textarea{
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 30px;
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.355);
+}
+
+
+.form-contact form select option{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.form-contact form textarea{
+    height: 100px;
+    resize: none;
+}
+
+.form-contact form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: 43px 43px;
+}
+
+.form-contact form label{
+    font-size: 20px;
+    font-weight:normal;
+}
+
+.form-contact h1{
+    text-align: center;
+}
+
+.form-contact form button{
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #111727;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-contact form .button {
+    text-align: right;
+    margin-top: 20px;
+}
+/* CONTACT FROM END */
+
+
+.out-card {
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.304);
+    border-radius: 10px;
+    margin: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+@media (max-width: 800px) {
+    .out-card {
+      flex-direction: column;
+    }
+}
+
+.content-card-left{
+    justify-content:flex-left;
+    align-items: flex-end;
+    flex: 60%;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+
+}
+
+.content-card-left .text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    word-spacing: 3px;
+    line-height: 130%;
+
+}
+
+.content-card-right{
+    justify-content:flex-right;
+    align-items: flex-start;
+    flex: 40%;
+    padding: 50px;
+
+}
+
+.content-card-right img{
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+
+.card-profile {
+    background-color: #f8f5f5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.304);
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.content {
+    padding: 5% 10%;
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+.card-profile p{
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    font-size: 1.3em; 
+    font-weight: bold;
+}
+.card-profile h1 small{
+    font-size: 15px; 
+    font-weight: 100;
+}
+.contact-button {
+    margin-top: 20px;
+    border: none;
+    background-color: #111727;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    font-size: 25px;
+    display: inline;
+}
+.cv{
+    margin-top: 10px;
+    font-size: 25px;
+    display: inline;
+
+}
+.cv p {
+    margin-left: 20px;
+    cursor: pointer;
+}
+.cv button, p{
+    display: inline;
+}
+
+.cv button a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon-logo{
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+.icon-logo a i{
+    padding: 10px;
+    border-radius: 20px;
+}
+.icon-logo a{
+    text-decoration: none;
+    color: black;
+}
+/*
+.contact-button {
+    margin-top: 20px;
+    border: none;
+    background-color: #111727;
+    color: white;
+    padding: 5px 28px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+}
+
+.card-content {
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.card-profile {
+    background-color: #f8f5f5;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.304);
+}
+
+.card-profile p{
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    font-size: 1.3em; 
+    font-weight: bold;
+}
+
+.out-card .content-card-left{
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+.out-card .content-card-right{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.icon-logo{
+    margin-top: 50px;
+} */
